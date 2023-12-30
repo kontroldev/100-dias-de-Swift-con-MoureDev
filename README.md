@@ -6,7 +6,7 @@ Ayer propusimos una emocionante actividad para toda la comunidad interesada en a
 
 ## Cómo Participar
 
-- **Repositorio de YouTube:** Puedes utilizar la [lista de reproducción de Moure en YouTube](https://youtube.com/playlist?list=PLNdFk2_brsRdyYGDX8QLFKmcpQPjFFrDC&si=LpbCacTYF-Ol5O63).
+- **Lista de YouTube:** Puedes utilizar la [lista de reproducción de Moure en YouTube](https://youtube.com/playlist?list=PLNdFk2_brsRdyYGDX8QLFKmcpQPjFFrDC&si=LpbCacTYF-Ol5O63).
 
 - **Curso en Udemy:** También está disponible el curso en [Udemy](https://www.udemy.com/course/swift_ios/).
 
