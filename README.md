@@ -33,3 +33,7 @@ Si encuentras alguna lección difícil, ¡no te preocupes! Hay grupos de estudio
 Recuerda, esto es una actividad para aprender juntos como comunidad. ¡Todos pueden participar!
 
 ## ¡Esperamos verte en el chat de grupo de estudio y disfrutar juntos de estos 100 días de aprendizaje!
+
+**El enlace para poder participar:** [https://discord.com/channels/729672926432985098/1164618377973727263](https://discord.com/channels/729672926432985098/1164618377973727263)
+
+
