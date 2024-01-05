@@ -17,7 +17,7 @@ salario
 
 
 // ARRAY
-// Arrays son colecciones ordenadas del mismo tipo y que se pueden repetir.
+// Arrays son un tipo de colecciones ordenadas del mismo tipo y que se pueden repetir.
                     //0 1 2
 var arregloNumeros = [1,2,3]
 let arregloNumerosInmutables = [3,2,1] // no pueden cambiar ya que son 'let'
@@ -27,8 +27,8 @@ print(arregloNumerosInmutables[0])
 
 
 // Agregar valores
-arregloNumeros.append(5)   // agrega valores
-arregloNumeros.insert(4, at: 3)  // Agrega valores en una posicion especifica
+arregloNumeros.append(5)   // agregar valores
+arregloNumeros.insert(4, at: 3)  // Agrega valor que le decimos en una posicion especificada.
 
 print(arregloNumeros)
 
@@ -48,7 +48,7 @@ print(arregloNumeros)
 // Array vacio
 var arregloVacio:[Int] = [] // es lo mismo que eliminar valores
 
-print(arregloVacio)
+print(arregloVacio)  //me quede aqui
  
 
 
