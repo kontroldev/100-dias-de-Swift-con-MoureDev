@@ -34,21 +34,21 @@ print(arregloNumeros)
 
 
 // Eliminar valores
-arregloNumeros.removeLast()   // eliminamos el ultimo valor del Array
+arregloNumeros.removeLast()   // eliminamos el ultimo valor una Array
 arregloNumeros.remove(at: 3)  // Elimina valores en la posicion especificada
 
 print(arregloNumeros)
 
 
 // Eliminar todo el Array.
-arregloNumeros.removeAll()
+arregloNumeros.removeAll()  // elemina todo los datos de un Array, quedando vacio.
 print(arregloNumeros)
 
 
 // Array vacio
-var arregloVacio:[Int] = [] // es lo mismo que eliminar valores
+var arregloVacio:[Int] = [] // es lo mismo que eliminar valores, pero de una variable 'Int'
 
-print(arregloVacio)  //me quede aqui
+print(arregloVacio)  
  
 
 
