@@ -72,6 +72,7 @@ myModernDictionary[002] // ‼️la busqueda de un diccionario siempre lo haremo
 
 myModernDictionary[002] = "Brais Moure" // opcion moderna
 // esto cambiamos el valor que habia en la clave, y las claves son unicas y no se puede repetir datos.
+
 myModernDictionary.updateValue("Brais Moure", forKey: 002) //Opcion clasica
 myModernDictionary[002]
 
@@ -82,36 +83,36 @@ myModernDictionary.removeValue(forKey: 002) // Opcion classica
 myModernDictionary[002]
 
 
-
 // TUPLAS
-/*Una tupla es una colección de valores que pueden ser de diferentes tipos. Las tuplas son muy útiles para agrupar varios valores relacionados en una sola entidad, sin necesidad de definir una estructura o una clase. Cada valor dentro de una
- tupla se denomina "elemento".*/
+/*Una tupla es una colección de valores que pueden ser de diferentes tipos. en comparacion a los 'Array', las 'Tuplas' puede contener diferentes valores como un diccionario, pero sin la 'clave/valor'*/
+ 
+            // 0   ,    1
+var array = ["Hola", "mundo"] // String, String
+array.1    // asi accedemos a un valor de una 'array' a la posicion 1 ("mundo")
 
-            //Nombre,apellido,edad,estatura
-var persona = ("kontrol", "dev", 44, 1.74) // String, String, Int, Double
+             // Nombre,  apellido,  edad, estatura
+var persona = ("Juan", "Villalvazo", 30, 1.86) // string, string, int, float/double. - ‼️ vigilamos y nos fijamos que para declarar una tupla lo tenemos que hacer con parentesis '()', en comparacion a los 'arrays' o 'diccionarios' que lo hacemos con corchetes '[]'
+persona.0 // aqui accedemos a una posicion de la tupla
 
-persona.1    // asi accedemos a un valor de la Tupla
-
-var (Nombre,apellido,edad,estatura) = persona  // asi podemos asignas los valores de una TUPLA
+var (Nombre,apellido,edad,estatura) = persona  // asi podemos asignas los valores de una 'TUPLA'. - seria al reves de como se asigna a una variable/constante, asi como si fuera la clave a la izquierda y el valor a la derecha.
 Nombre
 
-var personaNameTuples = (nombre:"kontrol",apellido:"dev", edad:44,estatura: 1.74)
+var personaNameTuples = (nombre:"kontrol",apellido:"dev", edad:44, estatura: 1.74) // si lo hacemos de esta manera, de añadire valores a una 'tupla'.
 
-personaNameTuples.edad  // asi podemos acceder a sus valores mediante de su nombre en vez de hacerlo .1, .2 etc etc
+personaNameTuples.edad  // podemos acceder a los valores en vez de la posicion de la misma (.1, .2 etc etc), accedemos mediante el nombre, por ejemplo (.nombre, . apellido, etc etc).
 
 
+// ENUMS - ENUMERACIONES
+/* Una enumeración (enumeracion o "enum") es un tipo de datos que te permite definir un conjunto de valores con nombre. Estos valores son opciones específicas que pueden ser representadas por un nombre descriptivo, lo que hace que el código sea más legible y mantenible. Las enumeraciones son útiles cuando tienes un conjunto finito de posibles valores relacionados. 👀 Mirar primer ejemplo*/
 
-// ENUMERACIONES
-/* Una enumeración (enumeration o "enum") es un tipo de datos que te permite definir un conjunto de valores con nombre. Estos valores son opciones específicas que pueden ser representadas por un nombre descriptivo, lo que hace que el
- código sea más legible y mantenible. Las enumeraciones son útiles cuando tienes un conjunto finito de posibles valores relacionados.*/
-
-enum DartosPersonales {
+enum PersonalData {
     case name
     case surname
     case address
     case phone
 // case name, surname, address, phone -> Tambien lo podemos definir asi separado por comas.
 }
+
 var currentDate: DartosPersonales = .name
 var input = "kontrol"   // esto seria los datos que esta introduciendo el usuario.
 
