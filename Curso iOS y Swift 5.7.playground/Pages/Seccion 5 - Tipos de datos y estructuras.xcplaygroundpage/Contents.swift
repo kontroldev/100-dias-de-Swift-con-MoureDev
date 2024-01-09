@@ -91,8 +91,8 @@ var array = ["Hola", "mundo"] // String, String
 array.1    // asi accedemos a un valor de una 'array' a la posicion 1 ("mundo")
 
              // Nombre,  apellido,  edad, estatura
-var persona = ("Juan", "Villalvazo", 30, 1.86) // string, string, int, float/double. - ‼️ vigilamos y nos fijamos que para declarar una tupla lo tenemos que hacer con parentesis '()', en comparacion a los 'arrays' o 'diccionarios' que lo hacemos con corchetes '[]'
-persona.0 // aqui accedemos a una posicion de la tupla
+var persona = ("Juan", "Villalvazo", 30, 1.86) // String, String, Int, float/double. - ‼️ vigilamos y nos fijamos que para declarar una tupla lo tenemos que hacer con parentesis '()', en comparacion a los 'arrays' o 'diccionarios' que lo hacemos con corchetes '[]'
+persona.0 // aqui accedemos a una posicion de una tupla
 
 var (Nombre,apellido,edad,estatura) = persona  // asi podemos asignas los valores de una 'TUPLA'. - seria al reves de como se asigna a una variable/constante, asi como si fuera la clave a la izquierda y el valor a la derecha.
 Nombre
@@ -105,7 +105,7 @@ personaNameTuples.edad  // podemos acceder a los valores en vez de la posicion d
 // ENUMS - ENUMERACIONES
 /* Una enumeración (enumeracion o "enum") es un tipo de datos que te permite definir un conjunto de valores con nombre. Estos valores son opciones específicas que pueden ser representadas por un nombre descriptivo, lo que hace que el código sea más legible y mantenible. Las enumeraciones son útiles cuando tienes un conjunto finito de posibles valores relacionados. 👀 Mirar primer ejemplo*/
 
-enum PersonalData {
+enum PersonalData {  // asi definimos un 'enum'
     case name
     case surname
     case address
