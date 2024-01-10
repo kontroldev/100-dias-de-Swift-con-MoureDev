@@ -2,7 +2,7 @@ import Foundation
 
 
 // BOLEANOS Y VALORES LOGICOS
-var estudiosRaulGallego = "Grado Universitario"
+var estudiosJuanVillanvazo = "Grado Universitario"
 var salario = 0
 var cedulaProfesional = true
 var cedulaMaestria = false
@@ -84,7 +84,7 @@ myModernDictionary[002]
 
 
 // TUPLAS
-/*Una tupla es una colección de valores que pueden ser de diferentes tipos. en comparacion a los 'Array', las 'Tuplas' puede contener diferentes valores como un diccionario, pero sin la 'clave/valor'*/
+/*Una tupla es una colección de valores que pueden ser de diferentes tipos, en comparacion a los 'Array', las 'Tuplas' puede contener diferentes valores como un diccionario, pero sin la 'clave/valor'*/
  
             // 0   ,    1
 var array = ["Hola", "mundo"] // String, String
@@ -92,12 +92,12 @@ array.1    // asi accedemos a un valor de una 'array' a la posicion 1 ("mundo")
 
              // Nombre,  apellido,  edad, estatura
 var persona = ("Juan", "Villalvazo", 30, 1.86) // String, String, Int, float/double. - ‼️ vigilamos y nos fijamos que para declarar una tupla lo tenemos que hacer con parentesis '()', en comparacion a los 'arrays' o 'diccionarios' que lo hacemos con corchetes '[]'
-persona.0 // aqui accedemos a una posicion de una tupla
+persona.0 // aqui accedemos a una posicion de una tupla ("Jaun")
 
 var (Nombre,apellido,edad,estatura) = persona  // asi podemos asignas los valores de una 'TUPLA'. - seria al reves de como se asigna a una variable/constante, asi como si fuera la clave a la izquierda y el valor a la derecha.
 Nombre
 
-var personaNameTuples = (nombre:"kontrol",apellido:"dev", edad:44, estatura: 1.74) // si lo hacemos de esta manera, de añadire valores a una 'tupla'.
+var personaNameTuples = (nombre:"Juan",apellido:"Villalvazo", edad:30, estatura: 1.86) // si lo hacemos de esta manera, de añadire valores a una 'tupla'.
 
 personaNameTuples.edad  // podemos acceder a los valores en vez de la posicion de la misma (.1, .2 etc etc), accedemos mediante el nombre, por ejemplo (.nombre, . apellido, etc etc).
 
@@ -110,13 +110,18 @@ enum PersonalData {  // asi definimos un 'enum'
     case surname
     case address
     case phone
-// case name, surname, address, phone -> Tambien lo podemos definir asi separado por comas.
 }
 
-var currentDate: DartosPersonales = .name
-var input = "kontrol"   // esto seria los datos que esta introduciendo el usuario.
+/* ‼️Tambien lo podemos definir asi separado por comas y queda mucho mas visual.
+enum PersonalData {
+    // case name, surname, address, phone
+}
+ */
 
-currentDate = .phone
+var currentDate: PersonalData = .name  // aqui creamos una nueva variable que hace referencia a 'enum' y le podemos añadir valores a la nueva variable, en esta caso empezamos con el nombre '.name'
+var input = "Brais"   // esto seria los datos que esta introduciendo el usuario.
+
+currentDate = .phone  //aqui añadimos en 'currentDate' quiere añadir su telefono.
 input = "746873687465"
 
 
@@ -128,18 +133,18 @@ enum ComplexPersonalData {
     case phone(Int)
     
 }
-var complexCurrentData: ComplexPersonalData = .name("Raul")  // asociamos el valor que queremos tratar.
-complexCurrentData = .address("Calle Test", 5)
+var complexCurrentData: ComplexPersonalData = .name("Brais")  // asociamos el valor que queremos tratar.
+complexCurrentData = .address("Calle Test", 5) // aqui añadimos la direccion - 'String','Int'
 
 
 // Enumeraciones con el mismo tipo de valor
-enum RawPersonalData: String {
-    case name = "Nombre"
+enum RawPersonalData: String {  // esto es como si infirieramos los 'enum' a todo a un mismo dato 'String'
+    case name = "Nombre"   // si lo ponemos de esta manera, cuando le pasemos el 'rawValue' valor en bruto en vez de salirnos en ingles nos saldra en el valor que le hallamos dado, en este caso" Nombre".
     case surname = "Apellidos"
     case address = "Direcccion"
     case phone = "Telefono"
 }
-RawPersonalData.name.rawValue // cuando llamamos a .rawValue a su valor en bruto - se puede hacer un ejemplo de cambiar el String en el unum por Int para que salga la posicion 1
+RawPersonalData.name.rawValue // cuando llamamos a .rawValue a su valor en bruto - se puede hacer un ejemplo de cambiar el 'String' en el enum por 'Int' para que salga la posicion 1.
 
 
 
