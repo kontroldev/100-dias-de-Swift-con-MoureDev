@@ -1,9 +1,10 @@
 import Foundation
 
 
-// OPERADORES DE RANGO
 var arregloEjemplo = [0,1,2,3,4,5,6,7,8,9] // una variable, con 10 elementos
 
+
+// OPERADORES DE RANGO
 var subSetArreglo = arregloEjemplo[8] // aqui accedemos a numero 7 por posicion
 
 // Operador rango doble lado
