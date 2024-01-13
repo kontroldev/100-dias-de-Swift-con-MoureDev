@@ -7,5 +7,7 @@
         <page name='28. Tuplas'/>
         <page name='29. Enum'/>
         <page name='30. Range Operator'/>
+        <page name='32. Operadores basicos en Swift'/>
+        <page name='34. If - Else'/>
     </pages>
 </playground>

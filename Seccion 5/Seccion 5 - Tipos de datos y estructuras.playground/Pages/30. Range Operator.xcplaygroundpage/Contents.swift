@@ -3,7 +3,7 @@ import Foundation
 
 var arregloEjemplo = [0,1,2,3,4,5,6,7,8,9] // una variable, con 10 elementos
 
-
+ 
 // OPERADORES DE RANGO
 var subSetArreglo = arregloEjemplo[8] // aqui accedemos a numero 7 por posicion
 
@@ -19,6 +19,6 @@ var subSetArreglo3 = arregloEjemplo[5...]  // aqui iriamos igual pero al reves, 
 var rangoCerrado = [1...5]
 //var rangoCerrado = 1...5  //Tambien se puede poner asi
 
-var subArray = Array(rangoCerrado[0])
+var subArray = Array(rangoCerrado[0]) 
 
 subArray[2]
