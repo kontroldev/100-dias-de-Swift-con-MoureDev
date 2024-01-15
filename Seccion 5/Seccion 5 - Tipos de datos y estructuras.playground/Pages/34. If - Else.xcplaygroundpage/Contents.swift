@@ -16,10 +16,10 @@ if edad >= 18 || cantidadDinero > 250 && sexoFemenino {  // si la edad es mayor 
     }
    
 
-if (edad >= 18 || cantidadDinero > 250) && sexoFemenino {  // puesto de esta manera, entre parectesis '()', siempre se va a valorar primero esta funcion.
+if !((edad >= 18 || cantidadDinero > 250) && (sexoFemenino)) {  // puesto de esta manera entre parentesis '()', siempre se va a valorar primero esta entre parectesis y luego los condicionales.
     print("Si puedes entrar al bar por que eres mayor de edad, o tienes dinero suficiente")
-          } else {   // si no se cumple la de arriba, entra en esta. 👇
+          } else { 
         print("No puedes entrar al bar, por que eres menor de edad")
     }
 
-
+// si ponemos el operador '!' al principio de la condicion, y ponemos parentesis a toda la condicion(revisar condigo) si esta fuera 'false', al poner ese operador, cambiaria toda la condicional de la misma y seria un 'true'.
