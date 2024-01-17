@@ -17,8 +17,19 @@ for pais in paises { // un bucle for de una 'Array'.
 }
 
 
-var paisesDeDiccionario = ["MX", "EEUU", "JP"]
+var paisesDeDiccionario = ["MX":"Mexico", "EEUU":"Estados Unidos", "JP":"Japon"]
 
-for pais in paisesDeDiccionario { // un bucle for de un 'diccionary'
-    print(pais)
+for (pais,significado) in paisesDeDiccionario { // un bucle for de un 'diccionary'
+    print("\(pais) --- \(significado) ")
 }
+
+
+var numeros = [1,2,3,4,5,6,7,8,9]
+var suma = 0
+
+for numero in numeros {
+    suma = numero + suma
+}
+print("La suma de los numeros es: \(suma)")
+
+numeros[0] + numeros[1] + numeros  // esto viene siendo lo mismo que el bucle for de arriba, con los mismo resultados.

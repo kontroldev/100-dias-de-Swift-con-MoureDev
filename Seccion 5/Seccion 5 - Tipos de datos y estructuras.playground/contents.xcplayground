@@ -12,5 +12,7 @@
         <page name='35. If anidados'/>
         <page name='36. Switch'/>
         <page name='38. Bucles o ciclos For'/>
+        <page name='39. Bucles While'/>
+        <page name='40. Bucle o repeat while'/>
     </pages>
 </playground>
