@@ -1,5 +1,6 @@
 import Foundation
 
+/*puedes definir funciones con múltiples parámetros, permitiéndote pasar más de un valor a la función cuando la llamas.*/
 
 func cuboDe(numero:Int) -> Int {  // aqui la funcion cuando termina de hacer todo, devolvera un valor de 'Int'
     let numeroCubo = numero * numero * numero
