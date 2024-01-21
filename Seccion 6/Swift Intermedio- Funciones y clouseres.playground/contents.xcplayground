@@ -5,5 +5,7 @@
         <page name='44. Funciones con parametros'/>
         <page name='45. Multiples parametros y valores retorno'/>
         <page name='46. Valores por default'/>
+        <page name='47. Valores multiples de retorno'/>
+        <page name='48. Parametros externos'/>
     </pages>
 </playground>
