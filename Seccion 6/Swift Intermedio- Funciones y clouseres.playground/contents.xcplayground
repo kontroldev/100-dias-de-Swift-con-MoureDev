@@ -7,5 +7,6 @@
         <page name='46. Valores por default'/>
         <page name='47. Valores multiples de retorno'/>
         <page name='48. Parametros externos'/>
+        <page name='49. Introduccion closures'/>
     </pages>
 </playground>
