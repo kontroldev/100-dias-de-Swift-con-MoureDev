@@ -1,12 +1,11 @@
 import UIKit
 
 class automovil {
-    
     var color = "neutro"
     var numeroLLantas = 4
     var precio = 0
 
-    func sencender() -> Bool {
+    func encender() -> Bool {
         return true
     }
     func apagar() -> Bool {
