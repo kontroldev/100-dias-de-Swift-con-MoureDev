@@ -1,6 +1,6 @@
 import Foundation
 
-
+// CLASE
 class claseAutomovil {
     var color = "neutro"
     var numeroLLantas = 4
@@ -24,6 +24,8 @@ miObjetoMazda.precio = 5000
 
 print(miObjetoMazda.precio)
 
+
+// ESTRUCTURA
 struct estructuraAutomovil {
     var color = "neutro"
     var numeroLlantas = 4

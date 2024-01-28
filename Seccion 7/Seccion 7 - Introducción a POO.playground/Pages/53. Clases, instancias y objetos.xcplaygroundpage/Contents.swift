@@ -1,5 +1,6 @@
 import UIKit
 
+// CLASES
 class automovil {
     var color = "neutro"
     var numeroLLantas = 4
