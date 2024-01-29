@@ -1,6 +1,6 @@
 import UIKit
 
-
+// opcional
 let myStringNumber = "100"
 let myIntNumber = Int(myStringNumber)
 
