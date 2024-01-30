@@ -3,5 +3,6 @@
     <pages>
         <page name='58. Variables opcional'/>
         <page name='59. Optional binding'/>
+        <page name='60. Opcional chaining'/>
     </pages>
 </playground>
