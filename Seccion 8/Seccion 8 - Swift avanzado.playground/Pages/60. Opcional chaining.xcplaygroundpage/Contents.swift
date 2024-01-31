@@ -1,7 +1,7 @@
 import Foundation
 
 
-// Cadenas de opcionales
+// Enlaces de opcionales
 class Student {
     var name: String?
     var book: Book?
