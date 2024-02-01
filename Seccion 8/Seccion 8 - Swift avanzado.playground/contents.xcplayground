@@ -4,5 +4,8 @@
         <page name='58. Variables opcional'/>
         <page name='59. Optional binding'/>
         <page name='60. Opcional chaining'/>
+        <page name='61. Guard let'/>
+        <page name='62. Manejo de errores'/>
+        <page name='63. Type casting'/>
     </pages>
 </playground>
