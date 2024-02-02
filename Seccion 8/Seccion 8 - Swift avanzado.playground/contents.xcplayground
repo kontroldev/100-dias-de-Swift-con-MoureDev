@@ -7,5 +7,6 @@
         <page name='61. Guard let'/>
         <page name='62. Manejo de errores'/>
         <page name='63. Type casting'/>
+        <page name='64. Tipos anidados'/>
     </pages>
 </playground>

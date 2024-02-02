@@ -29,7 +29,18 @@ for item in myArray {
         print("Item es de tipo Int y tiene un valor \(myItemInt)")
     } else if item is MyClass {
         let myItemMyClass = item as! MyClass
-        print("Item es de tipo Int y tiene un valor \(myItemMyClass)")
+        print("Item es de tipo Int y tiene un valor \(myItemMyClass.name!)")
         
+    }
+}
+
+
+for item in myArray {
+    if let myItemString = item as? String {
+        print("Item es de tipo String y tiene el valor \(myItemString)")
+    } else if let myItemInt = item as? Int {
+        print("Item es de tipo Int y tiene un valor \(myItemInt)")
+    } else if let myItemClass = item as? MyClass {
+        print("Item es de tipo Int y tiene un valor \(myItemClass.name!) y \(myItemClass.age!)")
     }
 }
