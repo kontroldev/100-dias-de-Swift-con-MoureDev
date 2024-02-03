@@ -1,7 +1,7 @@
 import UIKit
 
 
-// enlaces opcionales
+// Enlaces opcionales
 var myOpcionalString: String?
 var myOpcionalString2: String?
 var myOpcionalString3: String?
@@ -14,7 +14,7 @@ myOpcionalString3 = "32"
 if let myString = myOpcionalString {
     print(myString)
 } else {
-    print(myOpcionalString)
+    print(myOpcionalString!)
 }
 
 
