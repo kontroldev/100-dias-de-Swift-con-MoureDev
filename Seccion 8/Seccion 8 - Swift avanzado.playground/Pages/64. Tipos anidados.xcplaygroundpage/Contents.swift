@@ -4,7 +4,10 @@ import Foundation
 // Tipos anidados
 struct ChessPiece {
     
-    enum Color {
+    let color: Color
+    let type: PieceType
+    
+    enum Color:  String {
         case white = "Blanca", black = "Negra"
     }
     enum PieceType: String {
@@ -16,19 +19,21 @@ struct ChessPiece {
             switch self {
             case .king {
                 return Number(number: 1)
-            case .queen:
+            case queen:
                 return Number(number: 1)
-            case .rock:
-                return Number(number: 1)
-            case .bishop:
-                return Number(number: 1)
-            case .knight:
-                return Number(number: 1)
-            case .pawn:
-                return Number(number: 1)
+            case rock:
+                return Number(number: 2)
+            case bishop:
+                return Number(number: 2)
+            case knight:
+                return Number(number: 2)
+            case pawn:
+                return Number(number: 8)
             }
             }
         }
-        var
+        var descripcion: String {
+            return "Hay \(type.numbero.Number) pieza de ajedrez es de color \(color.rawValue) y de tipo \(type.rawValue)"
+        }
     }
 }
