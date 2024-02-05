@@ -8,5 +8,6 @@
         <page name='62. Manejo de errores'/>
         <page name='63. Type casting'/>
         <page name='64. Tipos anidados'/>
+        <page name='65. Extensiones'/>
     </pages>
 </playground>

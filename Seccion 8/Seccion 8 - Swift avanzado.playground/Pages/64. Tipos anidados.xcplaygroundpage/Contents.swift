@@ -15,25 +15,27 @@ struct ChessPiece {
         struct Number {
             let number: Int
         }
-        var mumber: Number {
+        var number: Number {
             switch self {
-            case .king {
+            case .king:
                 return Number(number: 1)
-            case queen:
+            case .queen:
                 return Number(number: 1)
-            case rock:
+            case .rock:
                 return Number(number: 2)
-            case bishop:
+            case .bishop:
                 return Number(number: 2)
-            case knight:
+            case .knight:
                 return Number(number: 2)
-            case pawn:
+            case .pawn:
                 return Number(number: 8)
             }
             }
         }
         var descripcion: String {
-            return "Hay \(type.numbero.Number) pieza de ajedrez es de color \(color.rawValue) y de tipo \(type.rawValue)"
+            return "Hay \(type.number.number) pieza de ajedrez es de color \(color.rawValue) y de tipo \(type.rawValue)"
         }
     }
-}
+
+let myPiece = ChessPiece(color: .black, type: .rock)
+print(myPiece.descripcion)
