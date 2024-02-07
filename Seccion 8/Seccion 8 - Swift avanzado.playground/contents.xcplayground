@@ -10,5 +10,6 @@
         <page name='64. Tipos anidados'/>
         <page name='65. Extensiones'/>
         <page name='66. Protocolos'/>
+        <page name='67. Protocolo delegado'/>
     </pages>
 </playground>
