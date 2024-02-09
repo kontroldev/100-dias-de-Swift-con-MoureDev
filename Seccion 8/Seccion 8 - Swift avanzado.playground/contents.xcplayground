@@ -11,5 +11,6 @@
         <page name='65. Extensiones'/>
         <page name='66. Protocolos'/>
         <page name='67. Protocolo delegado'/>
+        <page name='68. Genericos'/>
     </pages>
 </playground>

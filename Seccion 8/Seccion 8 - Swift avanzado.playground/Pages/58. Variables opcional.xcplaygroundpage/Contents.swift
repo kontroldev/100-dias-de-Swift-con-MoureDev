@@ -7,7 +7,7 @@ let myIntNumber = Int(myIntNumber)
 let myWrongStringNumber = "Brais"
 let myWrongIntNumber = Int(myWrongStringNumber)  // esto nos devuelve 'nill', al ser un "cadena de texto en vez de un numero, no puede hacer la conversion y nos duvuelve nill.
 
-var myOptionalString: String?
+var myOptionalString: String
 print(myOptionalString)
 
 
