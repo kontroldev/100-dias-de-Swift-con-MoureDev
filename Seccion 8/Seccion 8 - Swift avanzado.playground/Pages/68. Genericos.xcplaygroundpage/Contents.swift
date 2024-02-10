@@ -2,7 +2,7 @@ import Foundation
 
 
 // Codigo genericos.
-// Sin genericos
+// Sin genericos.
 func swapTwoInts(a: inout Int, b: inout Int) {
     let tempA = a
     a = b
@@ -16,7 +16,7 @@ swap(&myFirstInt, &mySecondInt)
 print("El primer valor es \(myFirstInt) y el segundo valor es \(mySecondInt)")
 
 
-// Con genericos
+// Con genericos.
 func swapTwoGenerics<T>(a: inout T, b: inout T) {
     let tempA = a
     a = b

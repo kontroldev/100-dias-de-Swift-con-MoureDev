@@ -1,7 +1,7 @@
 import Foundation
 
 
-// Protocolos delegados
+// Protocolos delegados.
 class FirstClass: SecondClassProtocol {
     
     func callSecond() {
