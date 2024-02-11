@@ -1,7 +1,7 @@
 import Foundation
 
 
-// Type casting (validacion de tipos de datos)
+// Type casting (validacion de tipos de datos).
 let myString = "Brais"
 let myInt = 32
 

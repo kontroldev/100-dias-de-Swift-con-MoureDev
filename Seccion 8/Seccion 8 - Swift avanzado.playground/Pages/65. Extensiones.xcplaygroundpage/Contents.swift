@@ -1,7 +1,7 @@
 import Foundation
 
 
-// Extensiones
+// Extensiones.
 let myMeters: Double = 5
 
 func metersToKm(meters: Double) -> Double {

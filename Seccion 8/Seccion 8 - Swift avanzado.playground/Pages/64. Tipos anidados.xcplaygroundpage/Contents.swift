@@ -1,7 +1,7 @@
 import Foundation
 
 
-// Tipos anidados
+// Tipos anidados.
 struct ChessPiece {
     
     let color: Color
