@@ -21,10 +21,10 @@ let mySet: Set = [5,8,1,0,3,9,7,2,4,6]  // esto es un 'set' de numeros de 0 al 9
 // Algoritmo de ordenacion - SORT
 
 print(myArray)
-myArray.sort()  // para ordenarlo, primero debemos de acceder a la coleccion y '.sort' y se accedemos a ella, debe de ser 'var'.
+myArray.sort()  // para ordenarlo, primero debemos de acceder a la coleccion y '.sort' y se accedemos a ella, debe de ser 'var' ⚠️ 👈.
 print(myArray)
 
-myArray.sorted { (intA, intB) -> Bool in  // esta funcion le decimos a la array cual es el tipo de ordenacion que queremos hacer.
+myArray.sorted { (intA, intB) -> Bool in  // esta funcion le decimos a la array cual sera e tipo de ordenacion que queremos hacer.
     return intA > intB           // cuando la condicion de 'intA' es mayor a 'intB'
 }
 
@@ -32,5 +32,8 @@ print(myArray)
 
 //myDiccionary.sort() No soportada - Ya que ni los 'diccionarios' ni los 'set' se pueden ordenar y no funciona esta funcion '.sort', pero si que funcionaran en el resto de algoritmos.
 //mySet.sort() No soportada
+
+
+
 
 
