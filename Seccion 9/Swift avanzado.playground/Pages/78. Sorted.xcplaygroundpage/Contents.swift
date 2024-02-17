@@ -23,8 +23,12 @@ var myArraySorted = myArray.sorted()
 print(myArray)
 print(myArraySorted)
 
-myArray.sorted = myArray.sorted { (intA, intB) -> Bool in
+myArraySorted = myArray.sorted() { (intA, intB) -> Bool in
     return intA > intB
 }
 
-print(myArraySorted)   // revisar proxima clase..... me da errro de playground
+print(myArraySorted)
+
+myDiccionary.sorted { (elementA, elementB) -> Bool in
+    return elementA.key < elementB.key     // Repasar esta seccion
+}
