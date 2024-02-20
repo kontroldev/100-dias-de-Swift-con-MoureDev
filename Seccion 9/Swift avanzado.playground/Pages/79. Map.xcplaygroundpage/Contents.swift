@@ -15,13 +15,26 @@ let myDiccionary = [5:"Cinco",
 
 let mySet: Set = [5,8,1,0,3,9,7,2,4,6]
 
-var myMapArray = myArray.map { (myInt) -> Int in
+let myMapArray = myArray.map { (myInt) -> Int in
         return myInt + 10
 }
 print(myMapArray)
 
 
-myMapArray = myArray.map { (myInt) -> String in
+let myStringMapArray = myArray.map { (myInt) -> String in
         return "Este es el numero \(myInt)"
 }
-print(myMapArray)      // repasar leccion
+print(myMapArray)
+
+// aqui tenemos un nuevo array con solo los valores enteros.
+let myIntMapArray = myDiccionary.map { (myElement) -> Int in
+    return myElement.key
+}
+print(myIntMapArray)
+
+
+// esto hace lo mismo que los arrays pero con los Sets.
+let myStringMapArray2 = mySet.map { (myInt) -> String in
+    return "\(myInt)"
+}
+print(myStringMapArray2)
