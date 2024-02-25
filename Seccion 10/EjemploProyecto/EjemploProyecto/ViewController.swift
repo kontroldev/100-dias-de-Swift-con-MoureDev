@@ -2,18 +2,24 @@
 //  ViewController.swift
 //  EjemploProyecto
 //
-//  Created by Raúl Gallego Alonso on 24/2/24.
+//  Created by Raúl Gallego Alonso on 25/2/24.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+    @IBOutlet weak var etiqueta: UILabel!
+    
+    override func viewDidLoad() {  // viewDidLoad nos dice que la funcion se activa cuando la vista fue cargada en memoria.
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+       etiqueta.text = "Ya cambié"
+        
     }
 
-
+    @IBAction func cambiarTexto(_ sender: Any) {  // esta funcion cambia la etiqueta de mas aarriba
+        etiqueta.text = "Hola Mundo Swift"
+    }
+    
 }
 
