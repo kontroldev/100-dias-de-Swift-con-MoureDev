@@ -13,11 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {  // viewDidLoad nos dice que la funcion se activa cuando la vista fue cargada en memoria.
         super.viewDidLoad()
         
-       etiqueta.text = "Ya cambié"
+        etiqueta.text = "Ya cambié"
+        etiqueta.text = "Ya cambié por segunda vez"
+        etiqueta.text = "Ya cambié por tercera vez"
+        etiqueta.text = "Ya cambié por cuarta vez"
         
     }
 
-    @IBAction func cambiarTexto(_ sender: Any) {  // esta funcion cambia la etiqueta de mas aarriba
+    @IBAction func cambiarTexto(_ sender: Any) {  // esta funcion cambia la etiqueta de mas arriba
         etiqueta.text = "Hola Mundo Swift"
     }
     
