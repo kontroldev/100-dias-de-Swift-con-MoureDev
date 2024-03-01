@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,swift,swiftpackagemanager
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,swift,swiftpackagemanager
+# Created by https://www.toptal.com/developers/gitignore/api/macos,swift
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,swift
 
 ### macOS ###
 # General
@@ -118,10 +118,4 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-### SwiftPackageManager ###
-Packages
-xcuserdata
-*.xcodeproj
-
-
-# End of https://www.toptal.com/developers/gitignore/api/macos,swift,swiftpackagemanager
+# End of https://www.toptal.com/developers/gitignore/api/macos,swift
