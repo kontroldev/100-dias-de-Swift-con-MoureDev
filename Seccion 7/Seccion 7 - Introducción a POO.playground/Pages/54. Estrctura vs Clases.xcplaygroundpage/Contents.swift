@@ -58,3 +58,8 @@ miSegundoEstructuraMazda.precio = 8100
 
 print(miSegundoObjetoMazda.precio)
 print(miSegundoEstructuraMazda.precio)
+
+
+
+// estyo es un comentario
+
