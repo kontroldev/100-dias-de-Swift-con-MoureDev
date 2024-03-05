@@ -25,26 +25,33 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5V-bK-v3g">
-                                <rect key="frame" x="0.0" y="153" width="393" height="120"/>
+                                <rect key="frame" x="0.0" y="153.33333333333334" width="393" height="120.00000000000003"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="vt8-7R-Uie"/>
                                 </constraints>
                             </pickerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="R19-7E-J79">
+                                <rect key="frame" x="20" y="293.33333333333331" width="353" height="26"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R19-7E-J79" secondAttribute="trailing" constant="20" id="6tu-W7-hTo"/>
+                            <constraint firstItem="R19-7E-J79" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Ns-AI-1B6"/>
                             <constraint firstItem="M5V-bK-v3g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8v5-Rb-t5j"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TLY-nG-efF" secondAttribute="trailing" constant="20" id="9gV-VW-yI5"/>
                             <constraint firstItem="M5V-bK-v3g" firstAttribute="top" secondItem="TLY-nG-efF" secondAttribute="bottom" constant="20" id="CiN-Dp-6cK"/>
                             <constraint firstItem="M5V-bK-v3g" firstAttribute="top" secondItem="TLY-nG-efF" secondAttribute="bottom" constant="20" id="O27-rh-XMP"/>
                             <constraint firstItem="M5V-bK-v3g" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eER-BW-UV6"/>
+                            <constraint firstItem="R19-7E-J79" firstAttribute="top" secondItem="M5V-bK-v3g" secondAttribute="bottom" constant="20" id="w6E-lu-V0H"/>
                             <constraint firstItem="TLY-nG-efF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yCm-ZG-177"/>
                             <constraint firstItem="TLY-nG-efF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="zhr-I4-3k5"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="myButton" destination="TLY-nG-efF" id="ivy-ya-QQZ"/>
+                        <outlet property="myPageControl" destination="R19-7E-J79" id="3F7-HH-w4l"/>
                         <outlet property="myPickerView" destination="M5V-bK-v3g" id="Yir-aH-UnK"/>
                     </connections>
                 </viewController>

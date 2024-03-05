@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     //MARK: - Outlets
     @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var myPickerView: UIPickerView!
+    @IBOutlet weak var myPageControl: UIPageControl!
     
     // Variables
     private let myPickerViewValues = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"]
@@ -30,8 +31,15 @@ class ViewController: UIViewController {
         myPickerView.dataSource = self  // 'dataSource' proporciona datos a la celda
         myPickerView.delegate = self   // 'delegate' asigna una tarea y/o las ejecuta, o para interactuar con nuestro 'ViewController'
         
+        //MARK: - PageControl
+        myPageControl.numberOfPages = myPickerViewValues.count
+        myPageControl.currentPageIndicatorTintColor = .blue
+        myPageControl.pageIndicatorTintColor = .lightGray
+        
+        
     }
       // al utilizar el comando 'self', estamos indicando que la instancia está en nuestro control y que se debe tomar de ahí.
+        
     
     //MARK: - Actions
     @IBAction func myButtonAction(_ sender: Any) {
