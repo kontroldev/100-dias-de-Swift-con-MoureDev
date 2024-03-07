@@ -31,6 +31,8 @@ class ViewController: UIViewController {
         myPickerView.dataSource = self  // 'dataSource' proporciona datos a la celda
         myPickerView.delegate = self   // 'delegate' asigna una tarea y/o las ejecuta, o para interactuar con nuestro 'ViewController'
         
+        
+        
         //MARK: - PageControl
         // esta propiedad hace coincidir el numero de paginas con el numero de 'Pickers'.
         myPageControl.numberOfPages = myPickerViewValues.count
@@ -59,6 +61,8 @@ class ViewController: UIViewController {
         // En esta propiedad, accedemos 'myPickerView' y es una accion que indica que fila vamos a seleccionar.
         //  y la fila la seleccionamos con 👇 'myPageControl' y a 'currentPage' que va indicar la pagina de PageControl.
         myPickerView.selectRow(myPageControl.currentPage, inComponent:0, animated: true)
+        
+        let myString = myPickerViewValues[myPageControl.currentPage];myButton.setTitle(myString, for: .normal)
     }
     
 }
