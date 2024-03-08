@@ -36,6 +36,13 @@
                                     <action selector="myPageControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="eft-dj-6hM"/>
                                 </connections>
                             </pageControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="auA-Ay-9qJ">
+                                <rect key="frame" x="20" y="339.33333333333331" width="353" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -45,10 +52,13 @@
                             <constraint firstItem="M5V-bK-v3g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8v5-Rb-t5j"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TLY-nG-efF" secondAttribute="trailing" constant="20" id="9gV-VW-yI5"/>
                             <constraint firstItem="M5V-bK-v3g" firstAttribute="top" secondItem="TLY-nG-efF" secondAttribute="bottom" constant="20" id="CiN-Dp-6cK"/>
+                            <constraint firstItem="auA-Ay-9qJ" firstAttribute="top" secondItem="R19-7E-J79" secondAttribute="bottom" constant="20" id="HeY-zf-3LG"/>
                             <constraint firstItem="M5V-bK-v3g" firstAttribute="top" secondItem="TLY-nG-efF" secondAttribute="bottom" constant="20" id="O27-rh-XMP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="auA-Ay-9qJ" secondAttribute="trailing" constant="20" id="cU2-df-S8L"/>
                             <constraint firstItem="M5V-bK-v3g" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eER-BW-UV6"/>
                             <constraint firstItem="R19-7E-J79" firstAttribute="top" secondItem="M5V-bK-v3g" secondAttribute="bottom" constant="20" id="w6E-lu-V0H"/>
                             <constraint firstItem="TLY-nG-efF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yCm-ZG-177"/>
+                            <constraint firstItem="auA-Ay-9qJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yEt-Su-4mc"/>
                             <constraint firstItem="TLY-nG-efF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="zhr-I4-3k5"/>
                         </constraints>
                     </view>
@@ -56,6 +66,7 @@
                         <outlet property="myButton" destination="TLY-nG-efF" id="ivy-ya-QQZ"/>
                         <outlet property="myPageControl" destination="R19-7E-J79" id="3F7-HH-w4l"/>
                         <outlet property="myPickerView" destination="M5V-bK-v3g" id="Yir-aH-UnK"/>
+                        <outlet property="mySegmentedControl" destination="auA-Ay-9qJ" id="8d1-Sd-OUX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

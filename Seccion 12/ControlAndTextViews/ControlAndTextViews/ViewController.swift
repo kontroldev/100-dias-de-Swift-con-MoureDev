@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var myPickerView: UIPickerView!
     @IBOutlet weak var myPageControl: UIPageControl!
+    @IBOutlet weak var mySegmentedControl: UISegmentedControl!
+    
     
     // Variables
     private let myPickerViewValues = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"]
@@ -41,10 +43,16 @@ class ViewController: UIViewController {
         // esta propiedad cambia el color del indicador, cuando no esta seleccionado.
         myPageControl.pageIndicatorTintColor = .lightGray
         
+        // al utilizar el comando 'self', estamos indicando que la instancia está en nuestro control y que se debe tomar de ahí.
         
+        //MARK: - Segmented Controls
+        mySegmentedControl.removeAllSegments()
+        for (index, value) in
+            myPickerViewValues.enumerated() {
+                mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)
+            }
     }
-      // al utilizar el comando 'self', estamos indicando que la instancia está en nuestro control y que se debe tomar de ahí.
-        
+                 // añadis comentarios aqui 👆
     
     //MARK: - Actions
     @IBAction func myButtonAction(_ sender: Any) {
