@@ -34,7 +34,6 @@ class ViewController: UIViewController {
         myPickerView.delegate = self   // 'delegate' asigna una tarea y/o las ejecuta, o para interactuar con nuestro 'ViewController'
         
         
-        
         //MARK: - PageControl
         // esta propiedad hace coincidir el numero de paginas con el numero de 'Pickers'.
         myPageControl.numberOfPages = myPickerViewValues.count
@@ -52,8 +51,7 @@ class ViewController: UIViewController {
                 mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)
             }
     }
-                 // añadis comentarios aqui 👆
-    
+                 
     //MARK: - Actions
     @IBAction func myButtonAction(_ sender: Any) {
     
