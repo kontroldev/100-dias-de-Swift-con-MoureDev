@@ -45,10 +45,21 @@ class ViewController: UIViewController {
         // al utilizar el comando 'self', estamos indicando que la instancia está en nuestro control y que se debe tomar de ahí.
         
         //MARK: - Segmented Controls
-        mySegmentedControl.removeAllSegments()
+        /// # Definicion
+        ///  *-Elemento de interfaz para elegir una opción de un conjunto.
+        ///  *-Se visualiza como una serie de botones unidos, donde solo uno puede estar seleccionado.
+        
+        /// # Usos comunes:
+        ///  *-Cambiar vistas.
+       ///   *-Filtrar datos.
+       ///   *-Seleccionar modo, tamaño, cantidad.
+        
+        mySegmentedControl.removeAllSegments()   // acabar de añadir comenentarios aqui. 👈
         for (index, value) in
             myPickerViewValues.enumerated() {
-                mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)
+                mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)  // esta linea podriamos añadir una imagen y un texto.
+     // En este caso vamos añadir un texto, de cada uno de los textos de 'PickerView'
+            
             }
     }
                  
