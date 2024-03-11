@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myPickerView: UIPickerView!
     @IBOutlet weak var myPageControl: UIPageControl!
     @IBOutlet weak var mySegmentedControl: UISegmentedControl!
+    @IBOutlet weak var mySlider: UISlider!
     
     
     // Variables
@@ -54,15 +55,21 @@ class ViewController: UIViewController {
        ///   *-Filtrar datos.
        ///   *-Seleccionar modo, tamaño, cantidad.
         
-        mySegmentedControl.removeAllSegments()   // acabar de añadir comenentarios aqui. 👈
+        mySegmentedControl.removeAllSegments()
         for (index, value) in
             myPickerViewValues.enumerated() {
                 mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)  // esta linea podriamos añadir una imagen y un texto.
      // En este caso vamos añadir un texto, de cada uno de los textos de 'PickerView'
-            
             }
+        
+        //MARK: - Slider
+        mySlider.minimumTrackTintColor = .red
+        mySlider.minimumValue = 0
+        mySlider.maximumValue = Float(myPickerViewValues.count)
+        
+        
     }
-                 
+        
     //MARK: - Actions
     @IBAction func myButtonAction(_ sender: Any) {
     
