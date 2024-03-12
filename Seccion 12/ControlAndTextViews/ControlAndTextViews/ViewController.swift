@@ -46,14 +46,14 @@ class ViewController: UIViewController {
         // al utilizar el comando 'self', estamos indicando que la instancia está en nuestro control y que se debe tomar de ahí.
         
         //MARK: - Segmented Controls
-        /// # Definicion
+        /// # Definicion:
         ///  *-Elemento de interfaz para elegir una opción de un conjunto.
         ///  *-Se visualiza como una serie de botones unidos, donde solo uno puede estar seleccionado.
         
         /// # Usos comunes:
         ///  *-Cambiar vistas.
-       ///   *-Filtrar datos.
-       ///   *-Seleccionar modo, tamaño, cantidad.
+        ///  *-Filtrar datos.
+        ///  *-Seleccionar modo, tamaño, cantidad.
         
         mySegmentedControl.removeAllSegments()
         for (index, value) in
@@ -63,9 +63,10 @@ class ViewController: UIViewController {
             }
         
         //MARK: - Slider
-        mySlider.minimumTrackTintColor = .red
-        mySlider.minimumValue = 0
-        mySlider.maximumValue = Float(myPickerViewValues.count)
+        mySlider.minimumTrackTintColor = .blue   // esto configuramos el color de la barra minima.
+        mySlider.minimumValue = 0   // aqui configuramos que el valor minimo es = 0
+        mySlider.maximumValue = Float(myPickerViewValues.count) // aqui configuramos el numero de elementos que tiene nuestro 'myPickerView'
+           // 👆aqui nos daria un error, por que '.count' es de tipo Int y devemos pasarlo a tipo 'Float'.
         
         
     }
