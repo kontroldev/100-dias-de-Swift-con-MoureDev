@@ -64,10 +64,10 @@ class ViewController: UIViewController {
         
         //MARK: - Slider
         mySlider.minimumTrackTintColor = .blue   // esto configuramos el color de la barra minima.
-        mySlider.minimumValue = 0   // aqui configuramos que el valor minimo es = 0
+        mySlider.minimumValue = 1   // aqui configuramos que el valor minimo es = 0, que en total hay 5 valores (posteriormente ponedremos 1)
         mySlider.maximumValue = Float(myPickerViewValues.count) // aqui configuramos el numero de elementos que tiene nuestro 'myPickerView'
            // 👆aqui nos daria un error, por que '.count' es de tipo Int y devemos pasarlo a tipo 'Float'.
-        
+        mySlider.value = 1 // aqui ponemos que su valor por defecto sea 1, se pondria a la izquierda de todo.
         
     }
         
@@ -82,13 +82,15 @@ class ViewController: UIViewController {
         }
     }
 
-    @IBAction func myPageControlAction(_ sender: Any) {
+    @IBAction func mySegmenControlAction(_ sender: Any) {
         // En esta propiedad, accedemos 'myPickerView' y es una accion que indica que fila vamos a seleccionar.
         //  y la fila la seleccionamos con 👇 'myPageControl' y a 'currentPage' que va indicar la pagina de PageControl.
         myPickerView.selectRow(myPageControl.currentPage, inComponent:0, animated: true)
         
         let myString = myPickerViewValues[myPageControl.currentPage];myButton.setTitle(myString, for: .normal)
     }
+    
+    // nos quedamos aqui.
     
 }
 
