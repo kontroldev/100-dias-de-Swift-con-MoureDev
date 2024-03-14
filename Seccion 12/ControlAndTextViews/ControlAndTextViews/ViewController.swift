@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mySlider: UISlider!
     
     
-    // Variables
+    /// ** Variables
     private let myPickerViewValues = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"]
     
     override func viewDidLoad() {
@@ -34,17 +34,21 @@ class ViewController: UIViewController {
         myPickerView.dataSource = self  // 'dataSource' proporciona datos a la celda
         myPickerView.delegate = self   // 'delegate' asigna una tarea y/o las ejecuta, o para interactuar con nuestro 'ViewController'
         
+        /// *** al utilizar el comando 'self', estamos indicando que la instancia está en nuestro control y que se debe tomar de ahí y es donde cargamos nuestros datos.
+        
+        // me quede aqui - leccion 96 minuto 3:38  ⚠️ ⚠️
         
         //MARK: - PageControl
         // esta propiedad hace coincidir el numero de paginas con el numero de 'Pickers'.
         myPageControl.numberOfPages = myPickerViewValues.count
+        
         // esta propiedad cual es el color del elemento que tenemos seleccionado.
         myPageControl.currentPageIndicatorTintColor = .blue
+        
         // esta propiedad cambia el color del indicador, cuando no esta seleccionado.
         myPageControl.pageIndicatorTintColor = .lightGray
         
-        // al utilizar el comando 'self', estamos indicando que la instancia está en nuestro control y que se debe tomar de ahí.
-        
+       
         //MARK: - Segmented Controls
         /// # Definicion:
         ///  *-Elemento de interfaz para elegir una opción de un conjunto.
@@ -82,7 +86,7 @@ class ViewController: UIViewController {
         }
     }
 
-    @IBAction func mySegmenControlAction(_ sender: Any) {
+    @IBAction func myPageControlAction(_ sender: Any) {
         // En esta propiedad, accedemos 'myPickerView' y es una accion que indica que fila vamos a seleccionar.
         //  y la fila la seleccionamos con 👇 'myPageControl' y a 'currentPage' que va indicar la pagina de PageControl.
         myPickerView.selectRow(myPageControl.currentPage, inComponent:0, animated: true)
@@ -90,24 +94,33 @@ class ViewController: UIViewController {
         let myString = myPickerViewValues[myPageControl.currentPage];myButton.setTitle(myString, for: .normal)
     }
     
-    // nos quedamos aqui.
+    @IBAction func mySegmenControlAction(_ sender: Any) {
+        myPickerView.selectRow(mySegmentedControl.selectedSegmentIndex, inComponent: 0, animated: true)
+    }
+    
     
 }
 
 extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
+        return 1  // aqui nuestro 'myPickerView' nos devuelve y tendra solo 1 componente.(recordar en la clase 96 del curso)
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return myPickerViewValues.count  // esto me retorna la variable privada.(mas arriba 👆)
+        return myPickerViewValues.count  // esto me retorna la variable privada mas arriba 👆
     }
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return myPickerViewValues[row]
     }
+    
     // esta funcion va a invocarse, cada vez que ponemos una nueva fila en el 'pickerView'
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let myString = myPickerViewValues[row]
         myButton.setTitle(myString, for: .normal)
+        
+        myPageControl.currentPage = row
+        
+        
     }
 }

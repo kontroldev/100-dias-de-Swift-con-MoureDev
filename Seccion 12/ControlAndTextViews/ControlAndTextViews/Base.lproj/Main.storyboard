@@ -42,9 +42,12 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="mySegmenControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="mwb-0C-Kqz"/>
+                                </connections>
                             </segmentedControl>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JI7-G0-XcD">
-                                <rect key="frame" x="18" y="390.33333333333331" width="357" height="31"/>
+                                <rect key="frame" x="18" y="389.33333333333331" width="357" height="31"/>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
