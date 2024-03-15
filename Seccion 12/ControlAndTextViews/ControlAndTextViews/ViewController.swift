@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         
         //MARK: - Buttons
         myButton.setTitle("Mi boton", for: .normal)  // esta funcion con 'setTitle' es para darle un titulo al boton y con el '.normal' creamos un estado para el boton que es una propiedad. Tambien esta la opcion .disabled 'o selected entre muchos otros dentro de la opciones '.normal'
+        
         myButton.backgroundColor = .blue      // '.backgroundColor' esto le ponemos un color de fondo al boton.
         myButton.setTitleColor(.white, for: .normal)  // '.setTitleColor' con esto ponemos el color del titulo.
         
@@ -36,7 +37,7 @@ class ViewController: UIViewController {
         
         /// *** al utilizar el comando 'self', estamos indicando que la instancia está en nuestro control y que se debe tomar de ahí y es donde cargamos nuestros datos.
         
-        // me quede aqui - leccion 96 minuto 3:38  ⚠️ ⚠️
+       
         
         //MARK: - PageControl
         // esta propiedad hace coincidir el numero de paginas con el numero de 'Pickers'.
@@ -87,40 +88,81 @@ class ViewController: UIViewController {
     }
 
     @IBAction func myPageControlAction(_ sender: Any) {
+        
         // En esta propiedad, accedemos 'myPickerView' y es una accion que indica que fila vamos a seleccionar.
         //  y la fila la seleccionamos con 👇 'myPageControl' y a 'currentPage' que va indicar la pagina de PageControl.
         myPickerView.selectRow(myPageControl.currentPage, inComponent:0, animated: true)
         
+        // Esta funcion hace que el boton de arriba cambie su titulo acda vez que movemos el 'pickerView' con el nombre que le pasamos por el 'PageControl'
         let myString = myPickerViewValues[myPageControl.currentPage];myButton.setTitle(myString, for: .normal)
     }
     
     @IBAction func mySegmenControlAction(_ sender: Any) {
         myPickerView.selectRow(mySegmentedControl.selectedSegmentIndex, inComponent: 0, animated: true)
+        
+        let myString = myPickerViewValues[mySegmentedControl.selectedSegmentIndex]
+        myButton.setTitle(myString, for: .normal)
+        
+        myPageControl.currentPage = mySegmentedControl.selectedSegmentIndex
     }
     
+    @IBAction func mySliderAction(_ sender: Any) {
+        
+      switch mySlider.value {
+        case 1..<2:
+            mySegmentedControl.selectedSegmentIndex = 0
+            progress = 0.2
+        case 2..<3:
+            mySegmentedControl.selectedSegmentIndex = 1
+            progress = 0.4
+        case 3..<4:
+            mySegmentedControl.selectedSegmentIndex = 2
+            progress = 0.6
+        case 4..<5:
+            mySegmentedControl.selectedSegmentIndex = 3
+            progress = 0.8
+        default:
+            mySegmentedControl.selectedSegmentIndex = 4
+            progress = 1
+    }
+       
     
 }
 
+//MARK: - Protocolos UIPickerViewDataSource, UIPickerViewDelegate
 extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1  // aqui nuestro 'myPickerView' nos devuelve y tendra solo 1 componente.(recordar en la clase 96 del curso)
+        return 1  // aqui nuestro 'myPickerView' nos devuelve y tendra solo 1 componente, solo una columna.(recordar en la clase 96 del curso)
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return myPickerViewValues.count  // esto me retorna la variable privada mas arriba 👆
+        return myPickerViewValues.count  // esto me retorna la variable privada mas arriba 👆- nos devuelve los 5 elementos que tiene variable privada.
     }
     
+    //  Esta funcion con 'titleForRow' retornaremos un String, con la fila correspondiente que queramos mostrar 'row' y pintaremos primero la posicion 1.
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return myPickerViewValues[row]
-    }
+    }            // Recordar que 'row' significa fila.
     
     // esta funcion va a invocarse, cada vez que ponemos una nueva fila en el 'pickerView'
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        // Esta funcion hace que si le damos a los bootones pequeños, va cambiando el 'pickerView' y el boton de arriba del todo.
         let myString = myPickerViewValues[row]
         myButton.setTitle(myString, for: .normal)
         
         myPageControl.currentPage = row
         
-        
+        mySegmentedControl.selectedSegmentIndex = row
     }
 }
+ 
+
+/// ** Importante. ⚠️
+///   ***DataSource: Sirve para cargar datos a una vista.
+///  ****Delegate: Sirve para interactuar con nuestro 'ViewController'
+
+
+/// ** Dato que nos dimos cuenta luego.
+/// ***Primero enlazamos 'Main' con el 'ViewController', luego creamos el diseño y por ultimo creamos las acciones.
