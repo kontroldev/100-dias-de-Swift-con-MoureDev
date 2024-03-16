@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myPageControl: UIPageControl!
     @IBOutlet weak var mySegmentedControl: UISegmentedControl!
     @IBOutlet weak var mySlider: UISlider!
+    @IBOutlet weak var myStepper: UIStepper!
     
     
     /// ** Variables
@@ -38,7 +39,6 @@ class ViewController: UIViewController {
         /// *** al utilizar el comando 'self', estamos indicando que la instancia está en nuestro control y que se debe tomar de ahí y es donde cargamos nuestros datos.
         
        
-        
         //MARK: - PageControl
         // esta propiedad hace coincidir el numero de paginas con el numero de 'Pickers'.
         myPageControl.numberOfPages = myPickerViewValues.count
@@ -68,14 +68,21 @@ class ViewController: UIViewController {
             }
         
         //MARK: - Slider
-        mySlider.minimumTrackTintColor = .blue   // esto configuramos el color de la barra minima.
+        mySlider.minimumTrackTintColor = .red   // esto configuramos el color de la barra minima.
         mySlider.minimumValue = 1   // aqui configuramos que el valor minimo es = 0, que en total hay 5 valores (posteriormente ponedremos 1)
         mySlider.maximumValue = Float(myPickerViewValues.count) // aqui configuramos el numero de elementos que tiene nuestro 'myPickerView'
            // 👆aqui nos daria un error, por que '.count' es de tipo Int y devemos pasarlo a tipo 'Float'.
-        mySlider.value = 1 // aqui ponemos que su valor por defecto sea 1, se pondria a la izquierda de todo.
-        
+        mySlider.value = 1 // aqui ponemos que su valor por defecto que sea 1, se pondrá a la izquierda de todo.
+        //Si pusieramos 3, quedaria en medio.
     }
         
+    
+    //MARK: - Steppers
+    
+    myStepper.minimumValue = 1   // leccion 100 minuto 1:15
+    myStepper.maximumValue = Double(myPickerViewValues.count)
+    
+    
     //MARK: - Actions
     @IBAction func myButtonAction(_ sender: Any) {
     
@@ -107,27 +114,22 @@ class ViewController: UIViewController {
     }
     
     @IBAction func mySliderAction(_ sender: Any) {
-        
-      switch mySlider.value {
+      
+        switch mySlider.value {
         case 1..<2:
             mySegmentedControl.selectedSegmentIndex = 0
-            progress = 0.2
         case 2..<3:
             mySegmentedControl.selectedSegmentIndex = 1
-            progress = 0.4
         case 3..<4:
             mySegmentedControl.selectedSegmentIndex = 2
-            progress = 0.6
         case 4..<5:
             mySegmentedControl.selectedSegmentIndex = 3
-            progress = 0.8
         default:
             mySegmentedControl.selectedSegmentIndex = 4
-            progress = 1
+        }
     }
-       
-    
 }
+
 
 //MARK: - Protocolos UIPickerViewDataSource, UIPickerViewDelegate
 extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
