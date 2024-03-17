@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         
         /// *** al utilizar el comando 'self', estamos indicando que la instancia está en nuestro control y que se debe tomar de ahí y es donde cargamos nuestros datos.
         
-       
+        
         //MARK: - PageControl
         // esta propiedad hace coincidir el numero de paginas con el numero de 'Pickers'.
         myPageControl.numberOfPages = myPickerViewValues.count
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         // esta propiedad cambia el color del indicador, cuando no esta seleccionado.
         myPageControl.pageIndicatorTintColor = .lightGray
         
-       
+        
         //MARK: - Segmented Controls
         /// # Definicion:
         ///  *-Elemento de interfaz para elegir una opción de un conjunto.
@@ -62,27 +62,26 @@ class ViewController: UIViewController {
         
         mySegmentedControl.removeAllSegments()
         for (index, value) in
-            myPickerViewValues.enumerated() {
-                mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)  // esta linea podriamos añadir una imagen y un texto.
-     // En este caso vamos añadir un texto, de cada uno de los textos de 'PickerView'
-            }
+                myPickerViewValues.enumerated() {
+            mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)  // esta linea podriamos añadir una imagen y un texto.
+            // En este caso vamos añadir un texto, de cada uno de los textos de 'PickerView'
+        }
         
         //MARK: - Slider
         mySlider.minimumTrackTintColor = .red   // esto configuramos el color de la barra minima.
         mySlider.minimumValue = 1   // aqui configuramos que el valor minimo es = 0, que en total hay 5 valores (posteriormente ponedremos 1)
         mySlider.maximumValue = Float(myPickerViewValues.count) // aqui configuramos el numero de elementos que tiene nuestro 'myPickerView'
-           // 👆aqui nos daria un error, por que '.count' es de tipo Int y devemos pasarlo a tipo 'Float'.
+        // 👆aqui nos daria un error, por que '.count' es de tipo Int y devemos pasarlo a tipo 'Float'.
         mySlider.value = 1 // aqui ponemos que su valor por defecto que sea 1, se pondrá a la izquierda de todo.
         //Si pusieramos 3, quedaria en medio.
-    }
         
-    
-    //MARK: - Steppers
-    
-    myStepper.minimumValue = 1   // leccion 100 minuto 1:15
-    myStepper.maximumValue = Double(myPickerViewValues.count)
-    
-    
+        
+        //MARK: - Steppers
+        
+        myStepper.minimumValue = 1
+        myStepper.maximumValue = Double(myPickerViewValues.count)
+        
+    }
     //MARK: - Actions
     @IBAction func myButtonAction(_ sender: Any) {
     
@@ -128,10 +127,16 @@ class ViewController: UIViewController {
             mySegmentedControl.selectedSegmentIndex = 4
         }
     }
+    
+    @IBAction func myStepperAction(_ sender: Any) {
+        let value = mySlider.value
+        mySlider.value = Float(value)
+    }
 }
 
 
 //MARK: - Protocolos UIPickerViewDataSource, UIPickerViewDelegate
+
 extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
