@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPickerViewDelegate {
     //MARK: - Outlets
     @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var myPickerView: UIPickerView!
@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mySegmentedControl: UISegmentedControl!
     @IBOutlet weak var mySlider: UISlider!
     @IBOutlet weak var myStepper: UIStepper!
+    @IBOutlet weak var mySwitch: UISwitch!
     
     
     /// ** Variables
@@ -34,7 +35,8 @@ class ViewController: UIViewController {
         //MARK: - Pickers
         myPickerView.backgroundColor = .lightGray  // esto le ponemos el color gris de fondo en el 'picker'
         myPickerView.dataSource = self  // 'dataSource' proporciona datos a la celda
-        myPickerView.delegate = self   // 'delegate' asigna una tarea y/o las ejecuta, o para interactuar con nuestro 'ViewController'
+        myPickerView.delegate = self // 'delegate' asigna una tarea y/o las ejecuta, o para interactuar con nuestro 'ViewController'
+        myPickerView.isHidden = true
         
         /// *** al utilizar el comando 'self', estamos indicando que la instancia está en nuestro control y que se debe tomar de ahí y es donde cargamos nuestros datos.
         
@@ -80,6 +82,12 @@ class ViewController: UIViewController {
         
         myStepper.minimumValue = 1
         myStepper.maximumValue = Double(myPickerViewValues.count)
+        
+        
+        //MARK: - Switch
+        
+        mySwitch.onTintColor = .purple
+        mySwitch.isOn = false
         
     }
     //MARK: - Actions
@@ -132,12 +140,20 @@ class ViewController: UIViewController {
         let value = mySlider.value
         mySlider.value = Float(value)
     }
+    
+    @IBAction func mySwitchAction(_ sender: Any) {
+        if mySwitch.isOn {
+            myPickerView.isHidden = false
+        } else {
+            myPickerView.isHidden = true
+    }
+    
 }
 
 
 //MARK: - Protocolos UIPickerViewDataSource, UIPickerViewDelegate
 
-extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate{
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1  // aqui nuestro 'myPickerView' nos devuelve y tendra solo 1 componente, solo una columna.(recordar en la clase 96 del curso)
