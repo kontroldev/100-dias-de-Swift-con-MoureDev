@@ -6,15 +6,8 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        <#code#>
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        <#code#>
-    }
+ 
+class ViewController: UIViewController {
     
     //MARK: - Outlets
     @IBOutlet weak var myButton: UIButton!
@@ -159,11 +152,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
         
     }
-    
+   
     
     //MARK: - Protocolos UIPickerViewDataSource, UIPickerViewDelegate
     
-    extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate{
+    extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
         
         func numberOfComponents(in pickerView: UIPickerView) -> Int {
             return 1  // aqui nuestro 'myPickerView' nos devuelve y tendra solo 1 componente, solo una columna.(recordar en la clase 96 del curso)
