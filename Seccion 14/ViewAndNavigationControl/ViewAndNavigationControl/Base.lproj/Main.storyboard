@@ -49,19 +49,29 @@
                                     <constraint firstAttribute="height" constant="2" id="QzH-Qr-3LR"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyImage" translatesAutoresizingMaskIntoConstraints="NO" id="MgN-Qd-7Bk">
+                                <rect key="frame" x="0.0" y="261" width="393" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="PJS-tT-8tW"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="MgN-Qd-7Bk" firstAttribute="top" secondItem="kmU-RC-Fiu" secondAttribute="bottom" id="0dE-Ec-iFc"/>
                             <constraint firstItem="kmU-RC-Fiu" firstAttribute="top" secondItem="YRj-xv-96T" secondAttribute="bottom" id="FbH-rB-L9B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MgN-Qd-7Bk" secondAttribute="trailing" id="GRE-B1-Ux6"/>
                             <constraint firstItem="YRj-xv-96T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HSH-DC-b6E"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YRj-xv-96T" secondAttribute="trailing" id="WLo-XP-CJX"/>
                             <constraint firstItem="YRj-xv-96T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ajd-lG-AYm"/>
                             <constraint firstItem="kmU-RC-Fiu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="beB-bg-76f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kmU-RC-Fiu" secondAttribute="trailing" id="iu9-ee-aIT"/>
+                            <constraint firstItem="MgN-Qd-7Bk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sjT-9q-fqf"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="myImage" destination="MgN-Qd-7Bk" id="7Td-Fg-2L6"/>
                         <outlet property="myView" destination="YRj-xv-96T" id="nUV-kg-WqN"/>
                     </connections>
                 </viewController>
@@ -71,11 +81,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="MyImage" width="750" height="422"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
