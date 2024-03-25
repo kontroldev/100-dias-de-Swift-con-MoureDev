@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var myView: UIView!
     @IBOutlet weak var myImage: UIImageView!
+    @IBOutlet weak var myFakeView: UIStackView!
     
     
     override func viewDidLoad() {
@@ -18,6 +19,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func myButtonAction(_ sender: Any) {
+        myFakeView.isHidden = true
+    }
+    
 }
 
