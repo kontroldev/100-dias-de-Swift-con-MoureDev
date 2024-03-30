@@ -54,6 +54,36 @@
             </objects>
             <point key="canvasLocation" x="2430" y="-785"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="zfB-za-8oi">
+            <objects>
+                <viewController id="ORe-xg-C8H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GM5-7H-NMW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mKH-un-fRU"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7oU-RA-OtD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3250" y="-785"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tP4-lG-APX">
+            <objects>
+                <viewController id="JXC-cD-LQI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VjD-kg-FPB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="D9E-tK-42n"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vtl-2j-uOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4106" y="-785"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="znJ-4g-2lP">
             <objects>
@@ -74,6 +104,12 @@
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
