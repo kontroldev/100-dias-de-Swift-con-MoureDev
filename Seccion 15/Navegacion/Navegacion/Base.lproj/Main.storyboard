@@ -15,20 +15,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcc-lV-wUQ">
+                                <rect key="frame" x="127" y="289" width="141" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Negro">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wA5-VP-c7o" kind="show" id="H6y-uL-A1f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHM-mE-fgm">
+                                <rect key="frame" x="140" y="409" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Rosa">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ORe-xg-C8H" kind="show" id="q34-vG-ouS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jID-6d-fsY">
+                                <rect key="frame" x="116" y="503" width="162" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Marrón">
+                                    <color key="titleColor" systemColor="systemBrownColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JXC-cD-LQI" kind="popoverPresentation" popoverAnchorView="jID-6d-fsY" id="Zs4-lr-KpJ">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Menu" id="l6Y-MG-WSz">
-                        <barButtonItem key="rightBarButtonItem" title="Negro" id="0Dh-CS-OuZ">
-                            <connections>
-                                <segue destination="wA5-VP-c7o" kind="show" id="dEE-2O-otT"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Menu" id="l6Y-MG-WSz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1571.7557251908397" y="-785.21126760563379"/>
+            <point key="canvasLocation" x="2223.6641221374043" y="-785.21126760563379"/>
         </scene>
         <!--Negro-->
         <scene sceneID="j6J-5H-pnk">
@@ -40,17 +74,11 @@
                         <viewLayoutGuide key="safeArea" id="tZI-dC-2Tf"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Negro" id="igs-v2-Var">
-                        <barButtonItem key="rightBarButtonItem" title="Rosa" id="AsJ-WE-57X">
-                            <connections>
-                                <segue destination="ORe-xg-C8H" kind="show" id="RpA-xo-fO5"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Negro" id="igs-v2-Var"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k3p-wI-NaI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2429.770992366412" y="-785.21126760563379"/>
+            <point key="canvasLocation" x="3285" y="-1514"/>
         </scene>
         <!--Rosa-->
         <scene sceneID="zfB-za-8oi">
@@ -62,13 +90,7 @@
                         <viewLayoutGuide key="safeArea" id="mKH-un-fRU"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Rosa" id="LTd-HR-owA">
-                        <barButtonItem key="rightBarButtonItem" title="Marrón" id="vIN-e9-fHL">
-                            <connections>
-                                <segue destination="JXC-cD-LQI" kind="show" id="Akg-At-Wg5"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Rosa" id="LTd-HR-owA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7oU-RA-OtD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,17 +101,8 @@
             <objects>
                 <viewController id="JXC-cD-LQI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VjD-kg-FPB">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LISTO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mw-5j-rtp">
-                                <rect key="frame" x="112" y="392" width="169" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="D9E-tK-42n"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vtl-2j-uOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4139.6946564885493" y="-785.21126760563379"/>
+            <point key="canvasLocation" x="3285" y="-74"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="znJ-4g-2lP">
@@ -114,7 +127,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RCt-8x-OjP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="691" y="-785"/>
+            <point key="canvasLocation" x="1320" y="-785"/>
         </scene>
     </scenes>
     <resources>
