@@ -49,9 +49,7 @@
                                     <color key="titleColor" systemColor="systemBrownColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="JXC-cD-LQI" kind="popoverPresentation" popoverAnchorView="jID-6d-fsY" id="Zs4-lr-KpJ">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="JXC-cD-LQI" kind="show" id="Zs4-lr-KpJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -94,14 +92,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7oU-RA-OtD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3286" y="-785"/>
+            <point key="canvasLocation" x="3285" y="-785"/>
         </scene>
         <!--Marron-->
         <scene sceneID="tP4-lG-APX">
             <objects>
                 <viewController id="JXC-cD-LQI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VjD-kg-FPB">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="D9E-tK-42n"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
@@ -111,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vtl-2j-uOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3285" y="-74"/>
+            <point key="canvasLocation" x="3285" y="-21"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="znJ-4g-2lP">
