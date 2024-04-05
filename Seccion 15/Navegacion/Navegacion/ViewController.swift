@@ -11,9 +11,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+ 
     }
 
-
+    @IBAction func botonNegro(_ sender: Any) {
+    }
+    
+    @IBAction func botonRosa(_ sender: Any) {
+    }
+    
+    @IBOutlet var botonMarron: UIView!
+    
+    
 }
+
 

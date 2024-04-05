@@ -25,6 +25,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="botonNegro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e4H-ja-rcu"/>
                                     <segue destination="wA5-VP-c7o" kind="show" id="H6y-uL-A1f"/>
                                 </connections>
                             </button>
@@ -37,6 +38,7 @@
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="botonRosa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1K7-hu-4Bo"/>
                                     <segue destination="ORe-xg-C8H" kind="show" id="q34-vG-ouS"/>
                                 </connections>
                             </button>
@@ -57,6 +59,9 @@
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Menu" id="l6Y-MG-WSz"/>
+                    <connections>
+                        <outlet property="botonMarron" destination="8bC-Xf-vdC" id="wR6-WP-82O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k3p-wI-NaI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3285" y="-1514"/>
+            <point key="canvasLocation" x="3285" y="-1520"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zfB-za-8oi">
@@ -109,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vtl-2j-uOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3285" y="-21"/>
+            <point key="canvasLocation" x="3285" y="-26"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="znJ-4g-2lP">
