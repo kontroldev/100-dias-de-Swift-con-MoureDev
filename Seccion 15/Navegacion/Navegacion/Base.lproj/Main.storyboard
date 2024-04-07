@@ -26,7 +26,6 @@
                                 </state>
                                 <connections>
                                     <action selector="botonNegro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e4H-ja-rcu"/>
-                                    <segue destination="wA5-VP-c7o" kind="show" id="H6y-uL-A1f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHM-mE-fgm">
@@ -39,7 +38,6 @@
                                 </state>
                                 <connections>
                                     <action selector="botonRosa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1K7-hu-4Bo"/>
-                                    <segue destination="ORe-xg-C8H" kind="show" id="q34-vG-ouS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jID-6d-fsY">
@@ -52,7 +50,6 @@
                                 </state>
                                 <connections>
                                     <action selector="botonmarron:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJh-aO-0mq"/>
-                                    <segue destination="JXC-cD-LQI" kind="show" id="Zs4-lr-KpJ"/>
                                 </connections>
                             </button>
                         </subviews>
