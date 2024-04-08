@@ -59,6 +59,9 @@
                     <navigationItem key="navigationItem" title="Menu" id="l6Y-MG-WSz"/>
                     <connections>
                         <outlet property="botonMarron" destination="8bC-Xf-vdC" id="wR6-WP-82O"/>
+                        <segue destination="wA5-VP-c7o" kind="show" identifier="ViewControllerNegro" id="1wI-wy-6U4"/>
+                        <segue destination="ORe-xg-C8H" kind="show" identifier="ViewControllerRosa" id="tDm-iR-WnR"/>
+                        <segue destination="JXC-cD-LQI" kind="show" identifier="ViewControllerMarron" id="YBT-GT-8Qm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -133,13 +136,13 @@
     </scenes>
     <resources>
         <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
