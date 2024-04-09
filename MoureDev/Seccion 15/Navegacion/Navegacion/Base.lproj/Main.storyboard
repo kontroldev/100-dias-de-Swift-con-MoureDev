@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="2223.6641221374043" y="-785.21126760563379"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Negro-->
         <scene sceneID="j6J-5H-pnk">
             <objects>
-                <viewController id="wA5-VP-c7o" sceneMemberID="viewController">
+                <viewController id="wA5-VP-c7o" customClass="ViewControllerNegro" customModule="Navegacion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nPm-g5-P2p">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="3285" y="-1520"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Rosa-->
         <scene sceneID="zfB-za-8oi">
             <objects>
-                <viewController id="ORe-xg-C8H" sceneMemberID="viewController">
+                <viewController id="ORe-xg-C8H" customClass="ViewControllerRosa" customModule="Navegacion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GM5-7H-NMW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="3285" y="-785"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Marron-->
         <scene sceneID="tP4-lG-APX">
             <objects>
-                <viewController id="JXC-cD-LQI" sceneMemberID="viewController">
+                <viewController id="JXC-cD-LQI" customClass="ViewControllerMarron" customModule="Navegacion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VjD-kg-FPB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
