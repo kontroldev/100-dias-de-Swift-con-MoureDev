@@ -1,4 +1,4 @@
-![Rieami200Swift](https://github.com/kontroldev/200-dias-de-Swift-SwiftUI/assets/75795616/76c94c42-b31c-432c-99a9-4b43f03ca276)
+![Rieami200Swift2](https://github.com/kontroldev/200-dias-de-Swift-SwiftUI/assets/75795616/5ada2d7a-323a-48cb-91ec-d4025a1e8d8f)
 
 # Bienvenidos a los 200 días de Swift & SwiftUI👋
 
