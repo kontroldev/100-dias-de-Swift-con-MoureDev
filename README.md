@@ -1,4 +1,4 @@
-![Cover100Dias_D](https://github.com/kontroldev/100-dias-de-Swift-con-MoureDev/assets/75795616/b1e16439-d3ec-48cf-8232-9796c9eedc38)
+![Rieami200Swift](https://github.com/kontroldev/200-dias-de-Swift-SwiftUI/assets/75795616/76c94c42-b31c-432c-99a9-4b43f03ca276)
 
 # Bienvenidos a los 200 días de Swift & SwiftUI👋
 
