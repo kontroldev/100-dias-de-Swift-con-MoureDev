@@ -38,7 +38,7 @@ var maxAmplitudeFound = AudioSample.min
 
 
 /// **Tuplas
-/* una tupla es un tipo de dato que permite agrupar varios valores en un solo valor compuesto. Puedes usar tuplas para
+/* Una tupla es un tipo de dato que permite agrupar varios valores en un solo valor compuesto. Puedes usar tuplas para
  devolver varios valores de una función como una sola entidad compuesta. Las tuplas son similares a las listas, pero a
  diferencia de las listas, las tuplas son inmutables, lo que significa que no puedes cambiar su tamaño o modificar los
  valores una vez que han sido creadas.*/

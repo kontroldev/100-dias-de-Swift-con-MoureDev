@@ -60,7 +60,7 @@ if let value = myNumber2 {
 }
 
 
-/// *** map, para desampequetar dentro de una opcional.
+/// *** map, para desempaquetar dentro de una opcional.
 let myStringNumber3 = "123"
 let myNumber3 = Int(myStringNumber3)
 

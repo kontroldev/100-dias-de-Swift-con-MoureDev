@@ -1,18 +1,9 @@
 ![Cover100Dias_D](https://github.com/kontroldev/100-dias-de-Swift-con-MoureDev/assets/75795616/b1e16439-d3ec-48cf-8232-9796c9eedc38)
 
-# Bienvenidos a los 100 días de Swift con MoureDev! 👋
-
-Ayer propusimos una emocionante actividad para toda la comunidad interesada en aprender Swift desde cero, aprovechando todos los recursos que nos ofrece MoureDev hasta la fecha.
-
-## Cómo Participar
-
-- **Lista de YouTube:** Puedes utilizar la [lista de reproducción de Moure en YouTube](https://youtube.com/playlist?list=PLNdFk2_brsRdyYGDX8QLFKmcpQPjFFrDC&si=LpbCacTYF-Ol5O63).
-
-- **Curso en Udemy:** También está disponible el curso en [Udemy](https://www.udemy.com/course/swift_ios/).
+# Bienvenidos a los 200 días de Swift & SwiftUI👋
 
 ## Dinámica de la Actividad
-
-La dinámica de esta actividad consiste en estudiar todos los días durante 1 hora, durante 100 días. Necesitarás las herramientas de Xcode si tienes un Mac o Visual Studio y la extensión de Swift si estás utilizando Windows. Además, se requiere una cuenta de GitHub (puedes crear una [aquí](https://github.com)).
+La dinámica de esta actividad consiste en estudiar 1 hora al día durante 200 días, utilizando los diversos recursos proporcionados por la comunidad y aquellos que se adapten mejor a tus necesidades de formación. Necesitarás las herramientas de Xcode si tienes un Mac o Visual Studio y la extensión de Swift si estás utilizando Windows. Además, se requiere una cuenta de GitHub (puedes crear una [aquí]).(https://github.com)).
 
 ## Importante: No es una Competición
 
