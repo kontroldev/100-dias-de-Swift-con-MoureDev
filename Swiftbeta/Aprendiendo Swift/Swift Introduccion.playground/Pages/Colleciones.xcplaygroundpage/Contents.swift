@@ -42,8 +42,27 @@ print(arrayString3)
 
 
 
+/// **Set**
 
+var setString = Set(["1", "2", "3"])
 
+print("setString contains \(setString.count) items.")
+
+// para saber si nuestro 'Set' esta vacio
+if setString.isEmpty {
+    print("setString is empty.")
+} else {
+    print("setString is not empty.")
+}
+
+setString.insert("4")
+
+print(setString)
+
+setString.contains("1")
+setString.remove("1")
+
+print(setString)
 
 
 
