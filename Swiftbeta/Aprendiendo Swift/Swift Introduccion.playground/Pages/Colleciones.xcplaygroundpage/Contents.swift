@@ -64,6 +64,42 @@ setString.remove("1")
 
 print(setString)
 
+for value in setString {
+    print(value)
+}
 
+setString.insert("10")
+print(setString)
+
+setString.insert("10") // en los 'Set' no podemos tener valores duplicados.
+
+
+/// **Diccionario*
+
+var dictionary = [String: String]() //un diccionario vacio, de 'String' con clave - valor.
+
+var dictionaryWithValues: [String: String] = ["name": "SwiftBeta", "type": "blog"]
+
+var diccionario = ["name": "SwfitBeta",
+                   "coordinateX": "1.0",
+                   "coordinateY": "1.0"]
+
+print("Dictionary \(diccionario.keys.count) items.")  // 'keys.count', cuentas claves tiene un diccionario.
+
+// como ver si diccionario vacio.
+if diccionario.isEmpty {
+    print("dictionary is empty.")
+} else {
+    print("dictionary is not empty.")
+}
+
+diccionario["coordinateZ"] = "2.0"
+print(diccionario)
+
+
+//actualizar valores
+
+
+// como modificar un diccionario
 
 //: [Next](@next)
