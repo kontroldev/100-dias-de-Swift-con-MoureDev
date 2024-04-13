@@ -78,13 +78,14 @@ setString.insert("10") // en los 'Set' no podemos tener valores duplicados.
 
 var dictionary = [String: String]() //un diccionario vacio, de 'String' con clave - valor.
 
-var dictionaryWithValues: [String: String] = ["name": "SwiftBeta", "type": "blog"]
+var dictionaryWithValues = ["name": "SwiftBeta", "type": "blog"]
 
 var diccionario = ["name": "SwfitBeta",
                    "coordinateX": "1.0",
                    "coordinateY": "1.0"]
 
 print("Dictionary \(diccionario.keys.count) items.")  // 'keys.count', cuentas claves tiene un diccionario.
+
 
 // como ver si diccionario vacio.
 if diccionario.isEmpty {
@@ -98,8 +99,16 @@ print(diccionario)
 
 
 //actualizar valores
+if let oldValue = dictionary.updateValue("10.o", forKey: "coordinateZ") { //asi actualizamos un valor en un diccionario.
+    print("The old value for cordinateZ was \(oldValue)")
+}
 
 
-// como modificar un diccionario
+if let removedValue = dictionary.removeValue(forKey: "cooordinateZ") {
+    print("The removed value is \(removedValue)")
+}
+
+dictionary["coordinateY"] = nil
+
 
 //: [Next](@next)
