@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
-    <pages>
-        <page name='Constantes y Variables'/>
-        <page name='Opcionales'/>
-        <page name='Colleciones'/>
-        <page name='Untitled Page'/>
-    </pages>
-</playground>
