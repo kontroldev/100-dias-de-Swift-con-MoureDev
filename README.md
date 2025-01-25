@@ -1,3 +1,6 @@
+
+![293460713-b1e16439-d3ec-48cf-8232-9796c9eedc38](https://github.com/user-attachments/assets/d59309a3-0ae7-4a2e-8694-9615c4925f03)
+
 # Bienvenidos a los 100 días de Swift con MoureDev! :wave:
 
 Ayer propusimos una emocionante actividad para toda la comunidad interesada en aprender Swift desde cero, aprovechando todos los recursos que nos ofrece MoureDev hasta la fecha.
